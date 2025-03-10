@@ -1,6 +1,6 @@
 # Editor.js Emoji Picker Tool
 
-An emoji picker tool ([Picmo](https://github.com/joeattardi/picmo)) for [Editor.js](https://editorjs.io/) inline toolbar.
+An emoji picker tool ([emoji-picker-element](https://github.com/nolanlawson/emoji-picker-element)) for [Editor.js](https://editorjs.io/) inline toolbar.
 
 ## Installation
 

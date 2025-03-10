@@ -1,4 +1,16 @@
-.ce-popover--inline .ce-popover--nested .ce-popover__container:has(.picmo__picker){
+.ce-popover--inline .ce-popover--nested .ce-popover__container:has(emoji-picker){
     padding: 0;
-    width:380px;
+    width:366px;
+}
+
+.ce-popover--inline .ce-popover--nested .ce-popover__container:has(emoji-picker) .ce-popover-item-html > div{
+    width:100%;
+}
+
+emoji-picker{
+    width:100%;
+    height:100%;
+    --num-columns: 8;
+    --emoji-size: 1.5rem;
+    --border-size:0;
 }

@@ -1,6 +1,6 @@
-import { createPicker } from 'picmo';
-
 import './index.css';
+
+import { Picker } from 'emoji-picker-element';
 
 export default class EmojiPickerTool {
 
@@ -8,12 +8,11 @@ export default class EmojiPickerTool {
         return true;
     }
 
-    constructor({ config, api}) {
+    constructor({ config, api }) {
         this.config = config;
         this.api = api;
         this.button = null;
         this.pickerZone = null;
-        this.picker = null;
         this.selectedRange = null;
     }
 
@@ -28,16 +27,25 @@ export default class EmojiPickerTool {
     renderActions() {
         this.pickerZone = document.createElement('div');
 
-        this.picker = createPicker({
-            rootElement: this.pickerZone,
+        this.api.listeners.on(this.pickerZone, 'click', (e) => { 
+            this.api.selection.expandToTag(this.pickerZone); 
+        }, true);
+
+        const picker = new Picker({
             locale: this.config.locale ?? 'en',
         });
 
-        this.picker.addEventListener('emoji:select', event => {
-            this.insertEmoji(event.emoji);
+        picker.addEventListener('emoji-click', event => {
+            this.insertEmoji(event.detail.unicode); // will log something like the above
         });
 
+        this.pickerZone.appendChild(picker);
+
         return this.pickerZone;
+    }
+
+    handleClick(e){
+        console.log('handleClick');
     }
 
     surround(range) {

@@ -18,6 +18,6 @@
     "url": "git+https://github.com/PierreLebedel/editorjs-emoji-picker-tool.git"
   },
   "dependencies": {
-    "picmo": "^5.8.5"
+    "emoji-picker-element": "^1.26.1"
   }
 }
