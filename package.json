@@ -1,0 +1,23 @@
+{
+  "name": "editorjs-emoji-picker-tool",
+  "version": "1.0.0",
+  "description": "Adds Emoji picker to Editor.js inline toolbar",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "editor.js",
+    "editorjs",
+    "emoji"
+  ],
+  "author": "Pierre Lebedel",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierreLebedel/editorjs-emoji-picker-tool.git"
+  },
+  "dependencies": {
+    "picmo": "^5.8.5"
+  }
+}

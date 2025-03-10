@@ -1,0 +1,4 @@
+.ce-popover--inline .ce-popover--nested .ce-popover__container:has(.picmo__picker){
+    padding: 0;
+    width:380px;
+}
