@@ -1,6 +1,6 @@
 # Editor.js Emoji Picker Tool
 
-An Emoji Picker Tool for Editor.js inline toolbar.
+An emoji picker tool ([Picmo](https://github.com/joeattardi/picmo)) for [Editor.js](https://editorjs.io/) inline toolbar.
 
 ## Installation
 
@@ -32,4 +32,12 @@ const editor = new EditorJS({
     // ...
 });
 ```
+
+## Config
+
+This tool supports these configuration parameters:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| locale | `string` | Locale for the emoji picker. Default is `'en'`. |
 
