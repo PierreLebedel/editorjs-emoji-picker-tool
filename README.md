@@ -7,11 +7,11 @@ An emoji picker tool ([emoji-picker-element](https://github.com/nolanlawson/emoj
 Get the package via npm or yarn:
 
 ```bash
-npm i editorjs-emoji-tool
+npm i @plebjs/editorjs-emoji-picker-tool
 ```
 
 ```bash
-yarn add editorjs-emoji-tool
+yarn add @plebjs/editorjs-emoji-picker-tool
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add editorjs-emoji-tool
 Add the tool to the Editor.js initial config:
 
 ```js
-import EmojiPickerTool from 'editorjs-emoji-picker-tool';
+import EmojiPickerTool from '@plebjs/editorjs-emoji-picker-tool';
 
 const editor = new EditorJS({
     // ...

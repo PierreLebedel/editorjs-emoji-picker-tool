@@ -1,6 +1,6 @@
 {
-  "name": "editorjs-emoji-picker-tool",
-  "version": "1.1.0",
+  "name": "@plebjs/editorjs-emoji-picker-tool",
+  "version": "1.0.0",
   "description": "Adds Emoji picker to Editor.js inline toolbar",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,9 @@
   "keywords": [
     "editor.js",
     "editorjs",
-    "emoji"
+    "emoji",
+    "picker",
+    "tool"
   ],
   "author": "Pierre Lebedel",
   "license": "Apache-2.0",
