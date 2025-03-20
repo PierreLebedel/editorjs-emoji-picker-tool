@@ -1,6 +1,6 @@
 {
   "name": "@plebjs/editorjs-emoji-picker-tool",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Adds Emoji picker to Editor.js inline toolbar",
   "main": "src/index.js",
   "scripts": {

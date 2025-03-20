@@ -36,7 +36,7 @@ const editor = new EditorJS({
 ## Inline tool
 
 To insert an emoji, select a portion of text and click the emoji icon in the inline toolbar. 
-If the text selection starts at the beginning of the line, the emoji will be inserted before the selected text. Otherwise, the emoji will be inserted at the end.
+If your text selection starts at the beginning of the line, the emoji will be inserted before the selected text. Otherwise, the emoji will be inserted at the end.
 
 ## Config
 
