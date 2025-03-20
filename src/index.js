@@ -45,10 +45,6 @@ export default class EmojiPickerTool {
         return this.pickerZone;
     }
 
-    handleClick(e){
-        console.log('handleClick');
-    }
-
     surround(range) {
         this.selectedRange = range;
     }
@@ -57,10 +53,16 @@ export default class EmojiPickerTool {
         const insertMark = document.createElement('MARK');
 
         const selectedText = this.selectedRange.extractContents();
-        insertMark.appendChild(selectedText);
-        
         const emojiText = document.createTextNode(emoji);
-        insertMark.appendChild(emojiText);
+
+        // Prepend Emoji if selection starts at the beginning of the line
+        if(this.selectedRange.startOffset === 0){
+            insertMark.appendChild(emojiText);
+            insertMark.appendChild(selectedText);
+        }else{
+            insertMark.appendChild(selectedText);
+            insertMark.appendChild(emojiText);
+        }
 
         const textNode = document.createTextNode(insertMark.textContent);
 
